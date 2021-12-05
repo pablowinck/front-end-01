@@ -1,0 +1,42 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 1.42;
+    background-color: #fff;
+  }
+  .container {
+    background-color: #f5f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .div-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-title {
+    font-size: 4rem;
+    margin-bottom: 0px;
+  }
+  .container-subtitle {
+    font-size: 2rem;
+    margin-top: 0px;
+    font-weight: 300;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .formulario-item {
+    margin-right: 1rem;
+  }
+  .btn-cadastrar{
+      height: 3rem;
+  }
