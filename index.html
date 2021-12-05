@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Front End</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.42857143;
+        color: #333;
+        background-color: #fff;
+      }
+      .container {
+        background-color: #f5f5f5;
+        border: 1px solid #e3e3e3;
+        border-radius: 4px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .title-container {
+        font-size: 4rem;
+        margin-bottom: 0px;
+      }
+      .subtitle-container {
+        font-size: 2rem;
+        margin-top: 0px;
+        font-weight: 300;
+      }
+      .div-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .formulario {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .formulario-item {
+        margin-right: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="div-container">
+        <h1 class="title-container">Front-end é demais!</h1>
+        <h2 class="subtitle-container">Eu fico bobo codando front-end</h2>
+      </div>
+    </div>
+    <div class="formulario">
+      <input
+        class="formulario-item"
+        type="text"
+        id="title"
+        placeholder="título"
+      />
+      <input
+        class="formulario-item"
+        type="text"
+        id="subtitle"
+        placeholder="subtítulo"
+      />
+      <button id="btn">Exibir</button>
+    </div>
+  </body>
+  <script>
+    const btn = document.getElementById("btn");
+    const titulo = document.getElementById("title");
+    const subtitle = document.getElementById("subtitle");
+
+    btn.addEventListener("click", () => {
+      const container = document.createElement("div");
+      container.classList.add("container");
+
+      container.innerHTML = `
+      <div class="div-container">
+        <h1 class="title-container">${titulo.value}</h1>
+        <h2 class="subtitle-container">${subtitle.value}</h2>
+      </div>`;
+
+      document.body.appendChild(container);
+    });
+  </script>
+</html>
